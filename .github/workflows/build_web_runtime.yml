@@ -16,5 +16,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: cd web
+      - run: echo $PWD
       - run: make && npm install && npm run build
       - run: echo "🍏 This job's status is ${{ job.status }}."
