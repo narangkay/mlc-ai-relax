@@ -15,7 +15,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: cd web
-      - run: echo $PWD
-      - run: make && npm install && npm run build
+      - name: Make and Build
+        working-directory: ./web
+        run: echo $PWD && make && npm install && npm run build
       - run: echo "🍏 This job's status is ${{ job.status }}."
