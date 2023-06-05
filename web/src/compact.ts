@@ -32,13 +32,7 @@ export function getPerformance(): Performance {
  * @param url The url.
  */
 export function createWebSocket(url: string): WebSocket {
-  if (typeof WebSocket == "undefined") {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const WebSocket = require("ws");
-    return new WebSocket(url);
-  } else {
-    return new (WebSocket as any)(url);
-  }
+  return new (WebSocket as any)(url);
 }
 
 /**

@@ -1247,14 +1247,7 @@ fn fragment_clear(@location(0) uv : vec2<f32>) -> @location(0) vec4<f32> {
    * @param url The url.
    */
   function createWebSocket(url) {
-      if (typeof WebSocket == "undefined") {
-          // eslint-disable-next-line @typescript-eslint/no-var-requires
-          const WebSocket = require("ws");
-          return new WebSocket(url);
-      }
-      else {
-          return new WebSocket(url);
-      }
+      return new WebSocket(url);
   }
   /**
    * Create a WASI based on current environment.
