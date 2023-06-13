@@ -1,5 +1,5 @@
 {
-  "name": "tvmjs",
+  "name": "tvmjs-next",
   "displayName": "TVM Wasm JS runtime",
   "license": "Apache-2.0",
   "version": "0.13.0-dev0",
