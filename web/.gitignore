@@ -6,4 +6,3 @@ build
 debug
 .ndarray_cache
 src/tvmjs_runtime_wasi.js
-dist/*
